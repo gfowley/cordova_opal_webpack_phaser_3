@@ -25,7 +25,7 @@ def phaser_demo
   end
 
   config = {
-    type:    Phaser::AUTO,
+    type:    `Phaser.AUTO`,
     width:   $window.view.width,
     height:  $window.view.height,
     physics: {
@@ -40,6 +40,6 @@ def phaser_demo
     }
   }
 
-  Phaser::Game.new config
+  Native `new Phaser.Game(#{config.to_n})`
 end
 
