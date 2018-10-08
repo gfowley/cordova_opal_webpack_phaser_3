@@ -13,3 +13,4 @@ platforms/android/app/build/
 platforms/android/app/src/main/assets/
 platforms/android/.gradle/
 
+phaser3-examples/
